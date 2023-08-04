@@ -164,7 +164,7 @@ export default function Home() {
                 <div className={styles.codeColLeft}>
                   <h3>Communicate</h3>
                   <p>
-                    Talk to the backend, the deveops, the frontend, all the
+                    Talk to the backend, the devops, the frontend, all the
                     developers, Let Communication be the key to success.
                   </p>
                 </div>

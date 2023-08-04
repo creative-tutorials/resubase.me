@@ -72,6 +72,7 @@ export default function Home() {
         <div className={styles.center}>
           <header className={styles.header}>
             <div className={styles.col}>
+              s
               <div className={styles.colRight}>
                 <Link
                   href="https://github.com/creative-tutorials/resubase/releases"
@@ -238,6 +239,19 @@ export default function Home() {
                 >
                   <path d="M23.25 5.133a9.46 9.46 0 0 1-2.65.717 4.57 4.57 0 0 0 2.03-2.512c-.908.53-1.9.903-2.932 1.101A4.647 4.647 0 0 0 16.327 3c-2.55 0-4.615 2.034-4.615 4.542a4.37 4.37 0 0 0 .119 1.036A13.158 13.158 0 0 1 2.315 3.83a4.485 4.485 0 0 0-.627 2.283c0 1.574.821 2.967 2.062 3.782a4.57 4.57 0 0 1-2.1-.567v.056c0 2.204 1.595 4.036 3.704 4.454a4.752 4.752 0 0 1-1.216.159c-.291 0-.582-.028-.868-.085.587 1.805 2.294 3.118 4.315 3.155a9.356 9.356 0 0 1-6.835 1.88A13.063 13.063 0 0 0 7.816 21c8.501 0 13.146-6.923 13.146-12.928 0-.197-.006-.394-.015-.586a9.304 9.304 0 0 0 2.303-2.353Z"></path>
                 </svg>
+              </Link>
+            </section>
+            <section id={styles.productHunt}>
+              <Link
+                href="https://www.producthunt.com/posts/resubase?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-resubase"
+                target="_blank"
+              >
+                <Image
+                  src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=408194&theme=dark"
+                  width={250}
+                  height={54}
+                  alt="Resubase - Designed&#0032;to&#0032;cater&#0032;to&#0032;the&#0032;needs&#0032;of&#0032;developers&#0032;worldwide | Product Hunt"
+                />
               </Link>
             </section>
           </div>

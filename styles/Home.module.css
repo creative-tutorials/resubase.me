@@ -165,6 +165,9 @@
 #twitter_x {
   margin-top: 3rem;
 }
+#productHunt {
+  margin-top: 1rem;
+}
 @media screen and (max-width: 830px) {
   #center_main .float {
     display: none;

@@ -4,14 +4,14 @@ import Link from "next/link";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [isActive, setIsActive] = useState(false);
-  const handleLoad = () => {
-    alert('loaded')
-  }
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -111,7 +111,12 @@ export default function Home() {
                 Designed to cater to the needs <br /> of developers worldwide.
               </h1>
               <div className={styles.mainBtn}>
-                <button id={styles.try}>Try Now</button>
+                <button
+                  id={styles.try}
+                  onClick={() => router.push("https://resubase.vercel.app")}
+                >
+                  Try Now
+                </button>
               </div>
             </section>
             <section id={styles.codingChallenges}>
@@ -164,13 +169,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className={styles.codeColRight}>
-                  <video
-                    width={500}
-                    height={350}
-                    autoPlay
-                    loop
-                    muted
-                  >
+                  <video width={500} height={350} autoPlay loop muted>
                     <source src="/designer-developer.mp4" type="video/mp4" />
                   </video>
                 </div>

@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [isActive, setIsActive] = useState(false);
+  const handleLoad = () => {
+    alert('loaded')
+  }
   return (
     <>
       <Head>
@@ -162,12 +165,14 @@ export default function Home() {
                 </div>
                 <div className={styles.codeColRight}>
                   <video
-                    autoPlay
-                    loop
-                    src="/designer-developer.mp4"
                     width={500}
                     height={350}
-                  ></video>
+                    autoPlay
+                    loop
+                    muted
+                  >
+                    <source src="/designer-developer.mp4" type="video/mp4" />
+                  </video>
                 </div>
               </div>
             </section>

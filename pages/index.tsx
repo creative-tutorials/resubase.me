@@ -51,22 +51,21 @@ export default function Home() {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/icon/apple-touch-icon.png"
+          href="/apple-touch-icon.png?v=2"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/icon/favicon-32x32.png"
+          href="/favicon-32x32.png?v=2"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/icon/favicon-16x16.png"
+          href="/favicon-16x16.png?v=2"
         />
-        <link rel="icon" href="/icon/favicon.ico" sizes="any" />
-        <link rel="manifest" href="/icon/site.webmanifest" />
+        <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.center}>

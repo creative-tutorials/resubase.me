@@ -179,7 +179,7 @@ export default function Home() {
                     </svg>
                   </Link>
                   <Link
-                    href="#"
+                    href={router.asPath}
                     id={styles.harmburger}
                     onClick={toggleMobileMenu}
                   >

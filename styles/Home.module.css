@@ -439,6 +439,16 @@ section#faq {
   display: flex;
   justify-content: space-between;
 }
+.producthunt_badge img {
+  width: 100%;
+  height: 100%;
+}
+#badge_ph {
+  margin-top: 0.9rem;
+}
+#tag2 {
+  margin-top: 0.9rem;
+}
 @media screen and (max-width: 939px) {
   #Header {
     padding: 20px;

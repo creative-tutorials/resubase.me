@@ -16,6 +16,8 @@ export default function Home() {
     github: "https://github.com/creative-tutorials/resubase",
     twitter: "https://twitter.com/resubaselab",
     producthunt: "https://www.producthunt.com/posts/resubase",
+    producthunt_badge:
+      "https://www.producthunt.com/posts/resubase?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-resubase",
     instatus: "https://resubase.instatus.com",
     license:
       "https://raw.githubusercontent.com/creative-tutorials/resubase/master/LICENSE",
@@ -218,7 +220,7 @@ export default function Home() {
               </div>
               <div className={styles.cta}>
                 <Link href="/signup">Features</Link>
-                <Link href="/">Get Started</Link>
+                <Link href="https://resubase.vercel.app">Get Started</Link>
               </div>
               <div className={styles.breaker}></div>
             </section>
@@ -318,7 +320,7 @@ export default function Home() {
               <div className={styles.ads_center}>
                 <h2>Ready to take your journey to the next level?</h2>
                 <div className={styles.link_center}>
-                  <Link href="/">Get Started</Link>
+                  <Link href="https://resubase.vercel.app/">Get Started</Link>
                 </div>
               </div>
             </section>
@@ -425,6 +427,34 @@ export default function Home() {
                 <Link href={links.license}>License</Link>
                 <Link href={links.github}>GitHub</Link>
                 <Link href={links.instatus}>Status</Link>
+              </div>
+            </div>
+            <div id={styles.badge_ph}>
+              <Link href={links.producthunt_badge}>
+                <Image
+                  src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=408194&theme=dark"
+                  width={250}
+                  height={54}
+                  alt="Resubase - Designed&#0032;to&#0032;cater&#0032;to&#0032;the&#0032;needs&#0032;of&#0032;developers&#0032;worldwide | Product Hunt"
+                />
+              </Link>
+            </div>
+            <div id={styles.tag2}>
+              <div
+                className="trustpilot-widget"
+                data-locale="en-US"
+                data-template-id="56278e9abfbbba0bdcd568bc"
+                data-businessunit-id="64d1edea776bfed6d4252615"
+                data-style-height="52px"
+                data-style-width="100%"
+              >
+                <a
+                  href="https://www.trustpilot.com/review/resubase-me.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Trustpilot
+                </a>
               </div>
             </div>
           </footer>

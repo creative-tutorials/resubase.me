@@ -1,11 +1,17 @@
 :root {
-  --main-bg: #05050B;
+  --main-bg: rgb(22, 22, 28);
   --second-bg: #000000;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-snap-stop: always;
+  scroll-snap-type: y mandatory;
+  scroll-padding-bottom: 0px;
+  scroll-margin: 0;
+  scroll-padding-block: 0;
 }
 body {
   background: var(--main-bg);

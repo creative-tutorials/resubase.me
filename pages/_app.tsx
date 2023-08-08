@@ -13,6 +13,12 @@ export default function App({ Component, pageProps }: AppProps) {
         src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
         strategy="lazyOnload"
       />
+      <Script
+        src="https://resubase.instatus.com/en/e8b1daba/widget/script.js"
+        strategy="lazyOnload"
+      />
+      {/* <script src="https://resubase.instatus.com/en/e8b1daba/widget/script.js">
+</script> */}
     </>
   );
 }

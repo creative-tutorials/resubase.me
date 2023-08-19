@@ -43,7 +43,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://resubase-me.vercel.app/hub/resubase%20header%20logo.svg"
+          content="/hub/resubase-min-logo.png"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -59,7 +59,7 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://resubase-me.vercel.app/hub/resubase%20header%20logo.svg"
+          content="/hub/resubase-min-logo.png"
         />
 
         <link
@@ -106,7 +106,7 @@ export default function Home() {
                 job.
               </h4>
               <div className="flex items-center gap-5 flex-col md:flex-row lg:flex-row md:gap-10 lg:gap-10">
-                <Link href="https://resubase.vercel.app">
+                <Link href="/start-now">
                   <button className="p-3 pl-10 pr-10 w-[100%] md:w-auto lg:w-auto bg-purple text-lg font-semibold rounded-lg text-white transition-all ease-in-out hover:bg-darkpurple">
                     SignUp
                   </button>
@@ -305,7 +305,7 @@ export default function Home() {
                   </li>
                 </div>
                 <div className="mt-20">
-                  <Link href="https://resubase.vercel.app">
+                  <Link href="/start-now">
                     <button
                       className="w-[100%] p-4 border-[3px] flex items-center justify-between rounded-md border-purple"
                       id={styles.stalkerbtn}
@@ -433,7 +433,7 @@ export default function Home() {
                   </li>
                 </div>
                 <div className="mt-20">
-                  <Link href="https://resubase.lemonsqueezy.com/checkout/buy/ab215088-c7ec-4e04-95f3-fefac0cfae57?embed=1&dark=1">
+                  <Link href="/upgrade">
                     <button
                       className="w-[100%] p-4 flex items-center justify-between rounded-md bg-purple"
                       id={styles.blurbutton}

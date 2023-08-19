@@ -53,7 +53,10 @@ export default function Home() {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://resubase.vercel.app" />
-        <meta property="og:image" content="/hub/resubase header logo.svg" />
+        <meta
+          property="og:image:secure"
+          content="https://resubase-me.vercel.app/hub/resubase%20header%20logo.svg"
+        />
 
         <link
           rel="apple-touch-icon"

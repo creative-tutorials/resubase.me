@@ -31,10 +31,7 @@ export default function ContactSales() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@Resubase" />
-        <meta
-          name="twitter:title"
-          content="Contact Sales"
-        />
+        <meta name="twitter:title" content="Contact Sales" />
         <meta
           name="twitter:description"
           content="Let's get you that lambo with Resubase sales team."
@@ -45,14 +42,12 @@ export default function ContactSales() {
         />
         <meta property="og:title" content="Contact Sales" />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://resubase.vercel.app" />
         <meta
-          property="og:url"
-          content="https://resubase.vercel.app"
+          property="og:image:secure"
+          content="https://resubase-me.vercel.app/hub/resubase%20header%20logo.svg"
         />
-        <meta
-          property="og:image"
-          content="/hub/resubase header logo.svg"
-        />
+
         <link
           rel="apple-touch-icon"
           sizes="180x180"

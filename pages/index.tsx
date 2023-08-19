@@ -211,7 +211,7 @@ export default function Home() {
                     Vibrant Q&A Community
                   </h3>
                   <p className="text-base text-white mt-3">
-                    Have a ever listened to that song and vibed to it
+                    Have you ever listened to that song and vibed to it
                     continuously, we know you&apos;ll be vibing once you join
                     the community
                   </p>

@@ -31,30 +31,34 @@ export default function Home() {
           content="l1a2fyP4jz21WqSIR2HNxLAyt__hUNkV-48f_zbVHYE"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:url" content="https://resubase-me.vercel.app" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Resubase - Your Launchpad to Coding Greatness!"
+        />
+        <meta
+          property="og:description"
+          content="Resubase is an open-source platform that fuels your journey towards coding greatness!."
+        />
+        <meta
+          property="og:image"
+          content="https://resubase-me.vercel.app/hub/resubase%20header%20logo.svg"
+        />
+
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@Resubase" />
+        <meta property="twitter:domain" content="resubase-me.vercel.app" />
+        <meta property="twitter:url" content="https://resubase-me.vercel.app" />
         <meta
           name="twitter:title"
           content="Resubase - Your Launchpad to Coding Greatness!"
         />
         <meta
           name="twitter:description"
-          content="Resubase is an open-source platform that fuels your journey
-          towards coding greatness!"
+          content="Resubase is an open-source platform that fuels your journey towards coding greatness!."
         />
         <meta
           name="twitter:image"
-          content="https://resubase-me.vercel.app/hub/resubase%20header%20logo.svg"
-        />
-
-        <meta
-          property="og:title"
-          content="Resubase - Your Launchpad to Coding Greatness!"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://resubase.vercel.app" />
-        <meta
-          property="og:image:secure"
           content="https://resubase-me.vercel.app/hub/resubase%20header%20logo.svg"
         />
 

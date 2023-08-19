@@ -31,29 +31,26 @@ export default function Home() {
           content="l1a2fyP4jz21WqSIR2HNxLAyt__hUNkV-48f_zbVHYE"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="twitter:card"
-          content="Resubase is an open-source platform that fuels your journey
-          towards coding greatness!"
-        />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@Resubase" />
-        <meta name="twitter:creator" content="@timi" />
-        <meta property="twitter:url" content="resubase.vercel.app" />
         <meta
-          property="twitter:title"
+          name="twitter:title"
           content="Resubase - Your Launchpad to Coding Greatness!"
         />
         <meta
-          property="twitter:description"
-          content="Resubase is an open-source platform that fuels your journey"
+          name="twitter:description"
+          content="Resubase is an open-source platform that fuels your journey
+          towards coding greatness!"
         />
         <meta
-          property="twitter:image"
-          content="/hub/resubase header logo.svg"
+          name="twitter:image"
+          content="https://resubase-me.vercel.app/hub/resubase%20header%20logo.svg"
         />
-        <meta property="twitter:site_name" content="Resubase" />
-        <meta property="twitter:type" content="website" />
-        <meta property="og:title" content="Contact Sales" />
+
+        <meta
+          property="og:title"
+          content="Resubase - Your Launchpad to Coding Greatness!"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://resubase.vercel.app" />
         <meta property="og:image" content="/hub/resubase header logo.svg" />

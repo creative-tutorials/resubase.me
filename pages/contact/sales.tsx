@@ -29,24 +29,20 @@ export default function ContactSales() {
           content="l1a2fyP4jz21WqSIR2HNxLAyt__hUNkV-48f_zbVHYE"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="twitter:card"
-          content="Let's get you that lambo with Resubase sales team."
-        />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@Resubase" />
-        <meta name="twitter:creator" content="@timi" />
-        <meta property="twitter:url" content="https://resubase.vercel.app" />
         <meta
-          property="twitter:title"
+          name="twitter:title"
           content="Contact Sales"
         />
         <meta
-          property="twitter:description"
-          content="Resubase is an open-source platform that fuels your journey"
+          name="twitter:description"
+          content="Let's get you that lambo with Resubase sales team."
         />
-        <meta property="twitter:image" content="/hub/resubase header logo.svg" />
-        <meta property="twitter:site_name" content="Resubase" />
-        <meta property="twitter:type" content="website" />
+        <meta
+          name="twitter:image"
+          content="https://resubase-me.vercel.app/hub/resubase%20header%20logo.svg"
+        />
         <meta property="og:title" content="Contact Sales" />
         <meta property="og:type" content="website" />
         <meta

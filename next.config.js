@@ -13,6 +13,20 @@ const nextConfig = {
     ],
     domains: ['api.producthunt.com'],
   },
+  async redirects() {
+    return [
+      {
+        source: '/twitter',
+        destination: 'https://x.com/treasuredev_', // Matched parameters can be used in the destination
+        permanent: true,
+      },
+      {
+        source: '/contact',
+        destination: 'https://tally.so/r/meQxol', // Matched parameters can be used in the destination
+        permanent: true,
+      },
+    ]
+  },
 };
 
 module.exports = nextConfig;

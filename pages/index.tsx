@@ -3,43 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import MobileMenu from "@/components/ux/mobileMenu";
 import { useState } from "react";
-import { useRouter } from "next/router";
-import { LinkProp } from "@/types/LinkProp";
+import Header from "@/components/ux/Header";
+import Footer from "@/components/ux/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [isMobileMenu, setIsMobileMenu] = useState(false);
-  const router = useRouter();
-  const [links, setLinks] = useState<LinkProp>({
-    github: "https://github.com/creative-tutorials/resubase",
-    twitter: "https://twitter.com/resubaselab",
-    producthunt: "https://www.producthunt.com/posts/resubase",
-    producthunt_badge:
-      "https://www.producthunt.com/posts/resubase?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-resubase",
-    instatus: "https://resubase.instatus.com",
-    license:
-      "https://raw.githubusercontent.com/creative-tutorials/resubase/master/LICENSE",
-    changelog: "https://github.com/creative-tutorials/resubase/releases",
-  });
-  const [accordionStatus, setAccordionStatus] = useState({
-    isAccordion1: false,
-    isAccordion2: false,
-    isAccordion3: false,
-  });
-
-  const openAccordion = (accordionNumber: number) => {
-    setAccordionStatus((prev) => ({
-      isAccordion1: accordionNumber === 1 ? !prev.isAccordion1 : false,
-      isAccordion2: accordionNumber === 2 ? !prev.isAccordion2 : false,
-      isAccordion3: accordionNumber === 3 ? !prev.isAccordion3 : false,
-    }));
-  };
-
-  const toggleMobileMenu = () => {
-    setIsMobileMenu(!isMobileMenu);
-  };
 
   return (
     <>
@@ -51,12 +23,12 @@ export default function Home() {
           towards coding greatness!."
         />
         <meta
-          name="google-site-verification"
-          content="l1a2fyP4jz21WqSIR2HNxLAyt__hUNkV-48f_zbVHYE"
+          name="keywords"
+          content="Programming, Learn Coding, Resubase, Coding Challenge, ResuAI, ResuChat"
         />
         <meta
-          name="trustpilot-one-time-domain-verification-id"
-          content="8b44ac97-9ceb-4355-a97b-a989d5ae6c54"
+          name="google-site-verification"
+          content="l1a2fyP4jz21WqSIR2HNxLAyt__hUNkV-48f_zbVHYE"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
@@ -64,24 +36,27 @@ export default function Home() {
           content="Resubase is an open-source platform that fuels your journey
           towards coding greatness!"
         />
-        <meta name="twitter:site" content="Resubase" />
+        <meta name="twitter:site" content="@Resubase" />
         <meta name="twitter:creator" content="@timi" />
+        <meta property="twitter:url" content="resubase.vercel.app" />
         <meta
-          property="og:title"
+          property="twitter:title"
           content="Resubase - Your Launchpad to Coding Greatness!"
         />
-        <meta property="og:url" content="resubase.vercel.app" />
-        <meta property="og:image" content="/resubase-default.png" />
-        <meta property="og:site_name" content="Resubase" />
-        <meta property="og:type" content="website" />
         <meta
-          property="og:description"
+          property="twitter:description"
           content="Resubase is an open-source platform that fuels your journey"
         />
         <meta
-          property="og:title"
-          content="Resubase - Your Launchpad to Coding Greatness!"
+          property="twitter:image"
+          content="/hub/resubase header logo.svg"
         />
+        <meta property="twitter:site_name" content="Resubase" />
+        <meta property="twitter:type" content="website" />
+        <meta property="og:title" content="Contact Sales" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://resubase.vercel.app" />
+        <meta property="og:image" content="/hub/resubase header logo.svg" />
 
         <link
           rel="apple-touch-icon"
@@ -103,362 +78,432 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.center}>
-          <div className={styles.top}>
-            <header id={styles.Header}>
-              <div className={styles.headCol}>
-                <div className={styles.logo}>
-                  <Image
-                    src={"/hub/Resubase - Logo.png"}
-                    width={40}
-                    height={40}
-                    alt={"Resubase Logo"}
-                  />
-                  <span id={styles.logo_text}>Resubase</span>
-                </div>
-                <nav id={styles.navigation}>
-                  <div className={styles.nav_links}>
-                    <Link href={`#${styles.home}`} id={styles.links}>
-                      Home
-                    </Link>
-                    <Link href={`#${styles.features}`} id={styles.links}>
-                      Features
-                    </Link>
-                    <Link href={`#${styles.faq}`} id={styles.links}>
-                      FAQ
-                    </Link>
-                  </div>
-                </nav>
-                <nav
-                  id={styles.mobile_nav}
-                  data-state={isMobileMenu ? "active" : ""}
-                >
-                  <div className={styles.nav_links}>
-                    <Link href={`#${styles.home}`} id={styles.links}>
-                      Home
-                    </Link>
-                    <Link href={`#${styles.features}`} id={styles.links}>
-                      Features
-                    </Link>
-                    <Link href={`#${styles.faq}`} id={styles.links}>
-                      FAQ
-                    </Link>
-                  </div>
-                </nav>
-
-                <div id={styles.nav_socials}>
-                  <Link href={links.github}>
-                    <svg
-                      width="20"
-                      height="20"
-                      fill="none"
-                      stroke="#ffffff"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M16.25 22.5v-3.865a3.361 3.361 0 0 0-.94-2.607c3.14-.35 6.44-1.538 6.44-6.99a5.43 5.43 0 0 0-1.5-3.746 5.058 5.058 0 0 0-.09-3.765s-1.18-.35-3.91 1.478a13.397 13.397 0 0 0-7 0C6.52 1.177 5.34 1.527 5.34 1.527a5.058 5.058 0 0 0-.09 3.765 5.43 5.43 0 0 0-1.5 3.775c0 5.413 3.3 6.602 6.44 6.991a3.366 3.366 0 0 0-.94 2.577V22.5"></path>
-                      <path d="M9.25 19.503c-5 1.498-5-2.496-7-2.996"></path>
-                    </svg>
-                  </Link>
-                  <Link href={links.twitter}>
-                    <svg
-                      width="20"
-                      height="20"
-                      fill="none"
-                      stroke="#ffffff"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5 0-.278-.028-.556-.08-.83A7.72 7.72 0 0 0 23 3Z"></path>
-                    </svg>
-                  </Link>
-                  <Link
-                    href={router.asPath}
-                    id={styles.harmburger}
-                    onClick={toggleMobileMenu}
+        <Header
+          styles={styles}
+          isMobileMenu={isMobileMenu}
+          setIsMobileMenu={setIsMobileMenu}
+        />
+        {isMobileMenu && <MobileMenu Link={Link} />}
+        <div
+          className={
+            "p-[10px] mt-20 flex flex-col gap-[30rem] md:p-[25px] lg:p-[30px]"
+          }
+        >
+          <section className="">
+            <div className="flex items-center justify-center text-center flex-col gap-8">
+              <h1 className="text-5xl font-semibold md:text-4xl lg:text-8xl">
+                <span className="text-learn">Learn.</span>{" "}
+                <span className="text-collab">Collaborate.</span>{" "}
+                <span className="text-build">Build.</span>
+              </h1>
+              <h4 className="font-normal text-xs text-white md:text-base lg:text-base">
+                Learn from our comprehensive library of tutorials, collaborate
+                on projects with other developers, <br /> and find your dream
+                job.
+              </h4>
+              <div className="flex items-center gap-5 flex-col md:flex-row lg:flex-row md:gap-10 lg:gap-10">
+                <Link href="https://resubase.vercel.app">
+                  <button className="p-3 pl-10 pr-10 w-[100%] md:w-auto lg:w-auto bg-purple text-lg font-semibold rounded-lg text-white transition-all ease-in-out hover:bg-darkpurple">
+                    SignUp
+                  </button>
+                </Link>
+                <Link href="/contact/sales">
+                  <button className="p-3 bg-transparent pl-10 pr-10 border-2 border-royalblue-dark-momentum shadow-sm shadow-royalblue-dark-momentum text-lg font-semibold rounded-lg text-white transition-all ease-in-out hover:shadow-none hover:border-transparent hover:bg-royalblue-dark-momentum">
+                    Get a demo
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </section>
+          <section className="p-[10px] md:p-[25px] lg:p-[30px]" id={"features"}>
+            <div className="">
+              <h2 className="text-purple text-xl">Our Mission</h2>
+              <p className="text-base text-white mt-6 md:text-2xl lg:text-4xl">
+                Our mission is to help developers learn these tools in a much
+                better way, because learning is supposed to be fun right? We
+                should have fun while learning.
+              </p>
+            </div>
+            <div className="mt-8 flex items-stretch flex-wrap gap-4">
+              <div className="p-8 bg-pleasesleep shadow-inner border border-is-this-purple rounded-lg w-[100%] md:w-[444px] lg:w-[444px]">
+                <div className="bg-frakingpurple flex items-center justify-center w-[46px] h-[46px] rounded-md border border-is-this-purple">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      width="20"
-                      height="20"
+                    <path
                       fill="none"
                       stroke="#ffffff"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M3 12h18"></path>
-                      <path d="M3 6h18"></path>
-                      <path d="M3 18h18"></path>
-                    </svg>
-                  </Link>
+                      strokeWidth="2.5"
+                      d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314Z"
+                    />
+                  </svg>
                 </div>
-              </div>
-            </header>
-          </div>
-          <div className={styles.sections}>
-            <section id={styles.home}>
-              <div className={styles.copyHeader}>
-                <h1 id={styles.heading}>Your Launchpad to Coding Greatness!</h1>
-                <p id={styles.subheading}>
-                  Resubase is an open-source platform that fuels your journey
-                  towards coding greatness!
-                </p>
-                <p id={styles.subheading} data-propery="subheading2">
-                  Resubase fosters an environment where your creativity
-                  flourishes, and your code becomes a testament to your journey{" "}
-                  <br />
-                  towards coding greatness.
-                </p>
-              </div>
-              <div className={styles.cta}>
-                <Link href="/signup">Features</Link>
-                <Link href="https://resubase.vercel.app">Get Started</Link>
-              </div>
-              <div className={styles.breaker}></div>
-            </section>
-            <section id={styles.features}>
-              <div className={styles.featHead}>
-                <h2 id={styles.heading}>Shaping developers for tomorrow</h2>
-                <p id={styles.subheading}>
-                  Resubase is here to support you in becoming an outstanding
-                  coder,
-                </p>
-                <p id={styles.subheading}>
-                  unlocking your full potential and taking your programming
-                  skills to the next level.
-                </p>
-              </div>
-              <div className={styles.flex_wrapper}>
-                <div className={styles.flex}>
-                  <div className={styles.cards}>
-                    <div className={styles.card_top}>
-                      <div className={styles.card1}>
-                        <h3 id={styles.feat_card_head}>
-                          Interactive Learning Paths 🚀
-                        </h3>
-                        <p id={styles.feat_card_des}>
-                          Embark on structured coding journeys tailored to your
-                          skill level. Our interactive learning paths guide you
-                          through essential concepts, hands-on exercises, and
-                          real-world projects, ensuring you master programming
-                          languages with confidence.
-                        </p>
-                      </div>
-                      <div className={styles.card2}>
-                        <h3 id={styles.feat_card_head}>
-                          Diverse Coding Challenges 💡
-                        </h3>
-                        <p id={styles.feat_card_des}>
-                          Sharpen your skills through an array of coding
-                          challenges that range from beginner to advanced
-                          levels. Put your problem-solving abilities to the test
-                          and earn badges as you conquer challenges, showcasing
-                          your expertise to the Resubase community.
-                        </p>
-                      </div>
-                    </div>
-                    <div className={styles.card_bottom}>
-                      <div className={styles.card1}>
-                        <h3 id={styles.feat_card_head}>
-                          Collaborative Project Hub 🤝
-                        </h3>
-                        <p id={styles.feat_card_des}>
-                          Ignite innovation by collaborating with fellow
-                          developers on shared projects. From brainstorming
-                          ideas to refining code, Resubase provides a
-                          collaborative space to bring your visions to life and
-                          learn from the collective wisdom of the community.
-                        </p>
-                      </div>
-                      <div className={styles.card2}>
-                        <h3 id={styles.feat_card_head}>
-                          Extensive Resource Library 📚
-                        </h3>
-                        <p id={styles.feat_card_des}>
-                          Access an extensive library of tutorials,
-                          documentation, and coding resources. Whether
-                          you&apos;re delving into a new framework or refining
-                          your expertise, Resubase equips you with the knowledge
-                          you need to excel in your coding journey.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={styles.mincard}>
-                    <h3 id={styles.feat_card_head}>
-                      Dynamic Community Engagement 👥
-                    </h3>
-                    <p id={styles.feat_card_des}>
-                      Explore the vibrant forums of Resubase and connect with a
-                      wide-ranging community of developers from around the
-                      world.
-                    </p>
-                    <p id={styles.feat_card_des}>
-                      Take part in conversations, seek guidance, and exchange
-                      insights to enhance your knowledge and expand your
-                      network.
-                    </p>
-                    <p id={styles.feat_card_des}>
-                      Discover the sense of connection that comes from being a
-                      member of a global coding community and learn from your
-                      colleagues.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-            {/* reviews section to be added soon */}
-            <section id={styles.ads}>
-              <div className={styles.ads_center}>
-                <h2>Ready to take your journey to the next level?</h2>
-                <div className={styles.link_center}>
-                  <Link href="https://resubase.vercel.app/">Get Started</Link>
-                </div>
-              </div>
-            </section>
-            <section id={styles.faq}>
-              <div className={styles.faq_center}>
-                <div className={styles.desi}>
-                  <h2 id={styles.heading}>
-                    I know you got a lot of questions for us...
-                  </h2>
-                  <p id={styles.subheading}>
-                    Here are a list of things you might be wondering about when
-                    it comes to Resubase
+                <div className="mt-16">
+                  <h3 className="text-2xl text-white font-semibold">
+                    Enhanced Search Engine
+                  </h3>
+                  <p className="text-base text-white mt-3">
+                    Yo, we got the fastest search engine in the world equipped
+                    for your learning
                   </p>
                 </div>
-                <div className={styles.accordion_type}>
-                  <div className={styles.accordion_item}>
-                    <div
-                      className={styles.accordion_trigger}
-                      data-state={
-                        accordionStatus.isAccordion1 ? "active" : "inactive"
-                      }
-                      onClick={() => openAccordion(1)}
-                    >
-                      <h3>Why the name Resubase?</h3>
-                    </div>
-                    <div
-                      className={styles.accordion_content}
-                      data-property="Why the name Resubase?"
-                      data-state={
-                        accordionStatus.isAccordion1 ? "active" : "inactive"
-                      }
-                    >
-                      <span>
-                        Our platform is called Resubase because we deliver
-                        results directly to its base. &quot;Resu&quot; comes
-                        from the word &quot;result&quot; and &quot;base&quot;{" "}
-                        <br />
-                        refers to the platform itself.
-                      </span>
-                    </div>
-                  </div>
-                  <div className={styles.accordion_item}>
-                    <div
-                      className={styles.accordion_trigger}
-                      data-state={
-                        accordionStatus.isAccordion2 ? "active" : "inactive"
-                      }
-                      onClick={() => openAccordion(2)}
-                    >
-                      <h3>How do I get started?</h3>
-                    </div>
-                    <div
-                      className={styles.accordion_content}
-                      data-property="How do I get started?"
-                      data-state={
-                        accordionStatus.isAccordion2 ? "active" : "inactive"
-                      }
-                    >
-                      <span>
-                        Getting started with Resubase is easy. All you have to
-                        do is create an account and you&apos;re good to go.
-                        It&apos;s a simple and <br /> straightforward process.
-                      </span>
-                    </div>
-                  </div>
-                  <div className={styles.accordion_item}>
-                    <div
-                      className={styles.accordion_trigger}
-                      data-state={
-                        accordionStatus.isAccordion3 ? "active" : "inactive"
-                      }
-                      onClick={() => openAccordion(3)}
-                    >
-                      <h3>What aspect of Resubase is open-source?</h3>
-                    </div>
-                    <div
-                      className={styles.accordion_content}
-                      data-propery="What aspect of Resubase is open-source?"
-                      data-state={
-                        accordionStatus.isAccordion3 ? "active" : "inactive"
-                      }
-                    >
-                      <span>
-                        The Resubase application and website are open-source and
-                        are being maintained by the team and other contributors{" "}
-                        <br />
-                        on a daily basis.
-                      </span>
-                    </div>
-                  </div>
+              </div>
+              <div className="p-8 bg-pleasesleep shadow-inner border border-is-this-purple rounded-lg w-[100%] md:w-[444px] lg:w-[444px]">
+                <div className="bg-frakingpurple flex items-center justify-center w-[46px] h-[46px] rounded-md border border-is-this-purple">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="none"
+                      stroke="#ffffff"
+                      strokeWidth="2"
+                      d="M9 1v7L2 20v3h20v-3L15 8V1m0 17a1 1 0 1 0 0-2a1 1 0 0 0 0 2Zm-6 2a1 1 0 1 0 0-2a1 1 0 0 0 0 2Zm9-7c-7-3-6 4-12 1M6 1h12"
+                    />
+                  </svg>
+                </div>
+                <div className="mt-16">
+                  <h3 className="text-2xl text-white font-semibold">
+                    The only test, you&apos;ll take{" "}
+                    <span className="italic underline">ever</span>
+                  </h3>
+                  <p className="text-base text-white mt-3">
+                    School? What school? We run the school now!! Take coding
+                    tests and challenges that are actually fun.
+                  </p>
                 </div>
               </div>
-            </section>
-          </div>
-          <footer id={styles.footer}>
-            <div className={styles.footerned}>
-              <div className={styles.ned1}>
-                <span>&copy; Resubase Labs.</span>
-              </div>
-              <div className={styles.ned2}>
-                <Link href={links.producthunt}>ProductHunt</Link>
-                <Link href={links.twitter}>Twitter</Link>
-                <Link href={links.changelog}>Change Log</Link>
-                <Link href={links.license}>License</Link>
-                <Link href={links.github}>GitHub</Link>
-                <Link href={links.instatus}>Status</Link>
-              </div>
-            </div>
-            <div id={styles.badge_ph}>
-              <Link href={links.producthunt_badge}>
-                <Image
-                  src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=408194&theme=dark"
-                  width={250}
-                  height={54}
-                  alt="Resubase - Designed&#0032;to&#0032;cater&#0032;to&#0032;the&#0032;needs&#0032;of&#0032;developers&#0032;worldwide | Product Hunt"
-                />
-              </Link>
-            </div>
-            <div id={styles.tag2}>
               <div
-                className="trustpilot-widget"
-                data-locale="en-US"
-                data-template-id="56278e9abfbbba0bdcd568bc"
-                data-businessunit-id="64d1edea776bfed6d4252615"
-                data-style-height="52px"
-                data-style-width="100%"
+                className={
+                  "p-8 bg-pleasesleep shadow-inner border border-is-this-purple rounded-lg w-[100%] md:w-[444px] lg:w-[444px]"
+                }
               >
-                <a
-                  href="https://www.trustpilot.com/review/resubase-me.vercel.app"
-                  target="_blank"
-                  rel="noopener"
+                <div
+                  className={
+                    "bg-frakingpurple flex items-center justify-center w-[46px] h-[46px] rounded-md border border-is-this-purple"
+                  }
                 >
-                  Trustpilot
-                </a>
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="#ffffff"
+                      d="M3 3a2 2 0 1 1 4 0a2 2 0 0 1-4 0Zm6.779 1.584l.042.032a2 2 0 1 0-.042-.032ZM6.268 6A2 2 0 1 1 9.73 7.998A2 2 0 0 1 6.268 6ZM2.5 6h2.67a3.013 3.013 0 0 0 .594 3H5.5a2.501 2.501 0 0 0-2.355 1.658a3.733 3.733 0 0 1-.933-.543C1.46 9.51 1 8.616 1 7.5A1.5 1.5 0 0 1 2.5 6Zm8 3a2.5 2.5 0 0 1 2.354 1.658c.34-.139.655-.32.934-.543C14.54 9.51 15 8.616 15 7.5A1.5 1.5 0 0 0 13.5 6h-2.67c.11.313.17.65.17 1a2.99 2.99 0 0 1-.764 2h.264Zm1.387 1.928c.073.176.113.37.113.572c0 1.116-.459 2.01-1.212 2.615C10.047 14.71 9.053 15 8 15c-1.053 0-2.047-.29-2.788-.885C4.46 13.51 4 12.616 4 11.5A1.496 1.496 0 0 1 5.5 10h5a1.5 1.5 0 0 1 1.387.928Z"
+                    />
+                  </svg>
+                </div>
+                <div className="mt-16">
+                  <h3 className="text-2xl text-white font-semibold">
+                    Vibrant Q&A Community
+                  </h3>
+                  <p className="text-base text-white mt-3">
+                    Have a ever listened to that song and vibed to it
+                    continuously, we know you&apos;ll be vibing once you join
+                    the community
+                  </p>
+                </div>
               </div>
             </div>
-          </footer>
+          </section>
+          <section className="p-[10px] md:p-[25px] lg:p-[30px]" id={"pricing"}>
+            <div className="flex items-center justify-center">
+              <h3 className="text-4xl text-center font-semibold text-white md:text-3xl lg:text-4xl">
+                The best investment you&apos;ll ever make
+              </h3>
+            </div>
+            <div className="flex items-center justify-center gap-5 flex-wrap mt-20">
+              <div className="p-8 bg-white rounded-md w-[100%] md:w-[444px] lg:w-[444px] shadow-shbuild">
+                <div className="flex items-start flex-col gap-2">
+                  <h3 className="font-semibold text-2xl">Stalker</h3>
+                  <h3 className="font-semibold text-3xl">$0</h3>
+                  <p className="font-semibold text-sm">
+                    You know this is for the basic stuff right?
+                  </p>
+                </div>
+                <div className="mt-8 flex items-start flex-col gap-4">
+                  <li className="list-none flex items-center gap-2 font-semibold">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="#5030BD"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M10.243 16.313 6 12.071l1.414-1.415 2.829 2.829 5.656-5.657 1.415 1.414-7.071 7.071Z"></path>
+                      <path
+                        fillRule="evenodd"
+                        d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm11 9a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                    Chat with Community
+                  </li>
+                  <li className="list-none flex items-center gap-2 font-semibold">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="#5030BD"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M10.243 16.313 6 12.071l1.414-1.415 2.829 2.829 5.656-5.657 1.415 1.414-7.071 7.071Z"></path>
+                      <path
+                        fillRule="evenodd"
+                        d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm11 9a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                    Starter templates
+                  </li>
+                  <li className="list-none flex items-center gap-2 font-semibold">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="#5030BD"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M10.243 16.313 6 12.071l1.414-1.415 2.829 2.829 5.656-5.657 1.415 1.414-7.071 7.071Z"></path>
+                      <path
+                        fillRule="evenodd"
+                        d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm11 9a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                    Watch & Learn from top Free Courses
+                  </li>
+                  <li className="list-none flex items-center gap-2 font-semibold">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="#5030BD"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M10.243 16.313 6 12.071l1.414-1.415 2.829 2.829 5.656-5.657 1.415 1.414-7.071 7.071Z"></path>
+                      <path
+                        fillRule="evenodd"
+                        d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm11 9a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                    Communit Support
+                  </li>
+                </div>
+                <div className="mt-20">
+                  <button
+                    className="w-[100%] p-4 border-[3px] flex items-center justify-between rounded-md border-purple"
+                    id={styles.stalkerbtn}
+                  >
+                    <span className="text-purple font-semibold text-lg">
+                      Start Now
+                    </span>
+                    <svg
+                      width="27"
+                      height="27"
+                      fill="#7148FC"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M15.038 6.344 13.627 7.76l3.27 3.255-13.605.014.002 2 13.568-.014-3.215 3.23 1.417 1.411 5.644-5.67-5.67-5.643Z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div className="p-8 bg-badass rounded-md w-[100%] md:w-[444px] lg:w-[444px] shadow-shbuild relative">
+                <div
+                  className="p-2 w-[100%] md:w-[444px] lg:w-[444px] bg-royalblue-dark-momentum font-semibold"
+                  id={styles.banner}
+                >
+                  <span className="text-lg text-white">
+                    Your girlfriends favorite
+                  </span>
+                </div>
+                <div className="flex items-start flex-col gap-2 mt-10">
+                  <h3 className="font-semibold text-2xl text-white">Badass</h3>
+                  <h3 className="font-semibold text-3xl text-white">
+                    $30<span className="text-xs font-normal">/month</span>
+                  </h3>
+                  <p className="font-semibold text-sm text-white">
+                    Prove you are a badass by unlocking your true <br />
+                    potential
+                  </p>
+                </div>
+                <div className="mt-8 flex items-start flex-col gap-4">
+                  <li className="list-none flex items-center gap-2 font-semibold text-white">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="#5030BD"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M10.243 16.313 6 12.071l1.414-1.415 2.829 2.829 5.656-5.657 1.415 1.414-7.071 7.071Z"></path>
+                      <path
+                        fillRule="evenodd"
+                        d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm11 9a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                    Unlimited chat features
+                  </li>
+                  <li className="list-none flex items-center gap-2 font-semibold text-white">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="#5030BD"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M10.243 16.313 6 12.071l1.414-1.415 2.829 2.829 5.656-5.657 1.415 1.414-7.071 7.071Z"></path>
+                      <path
+                        fillRule="evenodd"
+                        d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm11 9a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                    Pro templates
+                  </li>
+                  <li className="list-none flex items-center gap-2 font-semibold text-white">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="#5030BD"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M10.243 16.313 6 12.071l1.414-1.415 2.829 2.829 5.656-5.657 1.415 1.414-7.071 7.071Z"></path>
+                      <path
+                        fillRule="evenodd"
+                        d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm11 9a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                    Unlimited courses just for you
+                  </li>
+                  <li className="list-none flex items-center gap-2 font-semibold text-white">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="#5030BD"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M10.243 16.313 6 12.071l1.414-1.415 2.829 2.829 5.656-5.657 1.415 1.414-7.071 7.071Z"></path>
+                      <path
+                        fillRule="evenodd"
+                        d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm11 9a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                    AI helper
+                  </li>
+                  <li className="list-none flex items-center gap-2 font-semibold text-white">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="#5030BD"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M10.243 16.313 6 12.071l1.414-1.415 2.829 2.829 5.656-5.657 1.415 1.414-7.071 7.071Z"></path>
+                      <path
+                        fillRule="evenodd"
+                        d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm11 9a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                    Code on space with GitHub codespaces
+                  </li>
+                </div>
+                <div className="mt-20">
+                  <button
+                    className="w-[100%] p-4 flex items-center justify-between rounded-md bg-purple"
+                    id={styles.blurbutton}
+                  >
+                    <span className="text-white font-semibold text-lg">
+                      Start Now
+                    </span>
+                    <svg
+                      width="27"
+                      height="27"
+                      fill="#ffffff"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M15.038 6.344 13.627 7.76l3.27 3.255-13.605.014.002 2 13.568-.014-3.215 3.23 1.417 1.411 5.644-5.67-5.67-5.643Z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="p-[10px] md:p-[25px] lg:p-[30px]" id={"teams"}>
+            <div className="flex items-center text-center justify-center flex-col gap-3">
+              <h3 className="text-4xl font-semibold text-white md:text-4xl lg:text-5xl">
+                The tinder for devs
+              </h3>
+              <p className="text-white">
+                It&apos;s like tinder but better, Let&apos;s show you how real
+                collaboration works
+              </p>
+            </div>
+            <div className="flex items-stretch justify-center flex-wrap gap-10 mt-10">
+              <div className="w-[430px] h-[100%]">
+                <Image
+                  src="/hub/Card1.svg"
+                  className="w-[500px] h-[200px] object-contain"
+                  width={500}
+                  height={500}
+                  placeholder="blur"
+                  blurDataURL="/next.svg"
+                  alt="a picture of james card"
+                />
+              </div>
+              <div className="w-[430px] h-[100%]">
+                <Image
+                  src="/hub/Card2.svg"
+                  className="w-[500px] h-[200px] object-contain"
+                  width={500}
+                  height={500}
+                  placeholder="blur"
+                  blurDataURL="/next.svg"
+                  alt="a picture of james card"
+                />
+              </div>
+            </div>
+          </section>
+          <section className="p-[10px] md:p-[25px] lg:p-[30px]" id={"trusted"}>
+            <div className="flex items-center text-center justify-center flex-col gap-3">
+              <h3 className="text-4xl font-semibold text-white md:text-4xl lg:text-5xl">
+                Trusted by my mom
+              </h3>
+              {/* text-4xl text-center font-semibold text-white md:text-3xl lg:text-4xl */}
+              <p className="text-white text-sm md:text-base lg:text-base">
+                SignUp and show my mom she&apos;s not the only one that can use
+                such a great product
+              </p>
+              <div className="mt-8">
+                <Link href="/">
+                  <button className="p-4 pl-20 pr-20 rounded-lg bg-royalblue-dark-momentum text-lg text-white font-semibold transition-all ease-linear hover:bg-hover_royal">
+                    SignUp
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </section>
         </div>
+        <Footer Link={Link} />
       </main>
     </>
   );

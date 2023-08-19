@@ -1,6 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --main-bg: rgb(22, 22, 28);
-  --second-bg: #000000;
+  --main-bg: rgb(18, 17, 20);
+  --header-bg: rgb(14, 14, 15);
+  --foter-bg: #141417;
+  --bab: #58469c;
+  --shadown-turner: rgba(38, 35, 230, 0.105);
 }
 * {
   margin: 0;
@@ -16,5 +23,8 @@
 body {
   background: var(--main-bg);
   scroll-behavior: smooth;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
+}
+.roayl {
+  color: #2e52a5;
 }

@@ -17,8 +17,6 @@ export default function App({ Component, pageProps }: AppProps) {
         src="https://resubase.instatus.com/en/e8b1daba/widget/script.js"
         strategy="lazyOnload"
       />
-      {/* <script src="https://resubase.instatus.com/en/e8b1daba/widget/script.js">
-</script> */}
     </>
   );
 }

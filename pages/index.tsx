@@ -305,23 +305,25 @@ export default function Home() {
                   </li>
                 </div>
                 <div className="mt-20">
-                  <button
-                    className="w-[100%] p-4 border-[3px] flex items-center justify-between rounded-md border-purple"
-                    id={styles.stalkerbtn}
-                  >
-                    <span className="text-purple font-semibold text-lg">
-                      Start Now
-                    </span>
-                    <svg
-                      width="27"
-                      height="27"
-                      fill="#7148FC"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
+                  <Link href="https://resubase.vercel.app">
+                    <button
+                      className="w-[100%] p-4 border-[3px] flex items-center justify-between rounded-md border-purple"
+                      id={styles.stalkerbtn}
                     >
-                      <path d="M15.038 6.344 13.627 7.76l3.27 3.255-13.605.014.002 2 13.568-.014-3.215 3.23 1.417 1.411 5.644-5.67-5.67-5.643Z"></path>
-                    </svg>
-                  </button>
+                      <span className="text-purple font-semibold text-lg">
+                        Start Now
+                      </span>
+                      <svg
+                        width="27"
+                        height="27"
+                        fill="#7148FC"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M15.038 6.344 13.627 7.76l3.27 3.255-13.605.014.002 2 13.568-.014-3.215 3.23 1.417 1.411 5.644-5.67-5.67-5.643Z"></path>
+                      </svg>
+                    </button>
+                  </Link>
                 </div>
               </div>
               <div className="p-8 bg-badass rounded-md w-[100%] md:w-[444px] lg:w-[444px] shadow-shbuild relative">
@@ -431,23 +433,25 @@ export default function Home() {
                   </li>
                 </div>
                 <div className="mt-20">
-                  <button
-                    className="w-[100%] p-4 flex items-center justify-between rounded-md bg-purple"
-                    id={styles.blurbutton}
-                  >
-                    <span className="text-white font-semibold text-lg">
-                      Start Now
-                    </span>
-                    <svg
-                      width="27"
-                      height="27"
-                      fill="#ffffff"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
+                  <Link href="https://resubase.lemonsqueezy.com/checkout/buy/ab215088-c7ec-4e04-95f3-fefac0cfae57?embed=1&dark=1">
+                    <button
+                      className="w-[100%] p-4 flex items-center justify-between rounded-md bg-purple"
+                      id={styles.blurbutton}
                     >
-                      <path d="M15.038 6.344 13.627 7.76l3.27 3.255-13.605.014.002 2 13.568-.014-3.215 3.23 1.417 1.411 5.644-5.67-5.67-5.643Z"></path>
-                    </svg>
-                  </button>
+                      <span className="text-white font-semibold text-lg">
+                        Upgrade Now
+                      </span>
+                      <svg
+                        width="27"
+                        height="27"
+                        fill="#ffffff"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M15.038 6.344 13.627 7.76l3.27 3.255-13.605.014.002 2 13.568-.014-3.215 3.23 1.417 1.411 5.644-5.67-5.67-5.643Z"></path>
+                      </svg>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

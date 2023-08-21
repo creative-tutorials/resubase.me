@@ -42,7 +42,7 @@ export default function Home() {
           content="Resubase is an open-source platform that fuels your journey towards coding greatness!."
         />
         <meta
-          property="og:image"
+          property="og:image:secure"
           content="https://res.cloudinary.com/derbreilm/image/upload/v1692623591/resubase-min-logo_l6hlqw.png?4362984378"
         />
 

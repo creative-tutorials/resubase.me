@@ -41,7 +41,7 @@ export default function ContactSales() {
         />
         <meta
           property="og:image"
-          content="https://resubase-me.vercel.app/hub/resubase%20header%20logo.svg"
+          content="https://res.cloudinary.com/derbreilm/image/upload/v1692623591/resubase-min-logo_l6hlqw.png"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -57,7 +57,7 @@ export default function ContactSales() {
         />
         <meta
           name="twitter:image"
-          content="https://resubase-me.vercel.app/hub/resubase%20header%20logo.svg"
+          content="https://res.cloudinary.com/derbreilm/image/upload/v1692623591/resubase-min-logo_l6hlqw.png"
         />
 
         <link

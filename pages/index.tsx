@@ -43,7 +43,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="/hub/resubase-min-logo.png"
+          content="https://res.cloudinary.com/derbreilm/image/upload/v1692623591/resubase-min-logo_l6hlqw.png"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -59,7 +59,7 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="/hub/resubase-min-logo.png"
+          content="https://res.cloudinary.com/derbreilm/image/upload/v1692623591/resubase-min-logo_l6hlqw.png"
         />
 
         <link

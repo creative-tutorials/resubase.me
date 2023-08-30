@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --main-bg: rgb(18, 17, 20);
+  --main-bg: #171719;
   --header-bg: rgb(14, 14, 15);
   --foter-bg: #141417;
   --bab: #58469c;
@@ -27,4 +27,16 @@ body {
 }
 .roayl {
   color: #2e52a5;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+}
+
+.swiper-slide {
+  /* text-align: center; */
+  /* font-size: nor; */
+  background: transparent;
+
 }

@@ -51,7 +51,7 @@
   -moz-box-shadow: 0px 0px 106px -20px rgba(114, 72, 252, 0.9);
   box-shadow: 0px 0px 106px -20px rgba(114, 72, 252, 0.9);
 }
-@media screen and (max-width:590px) {
+@media screen and (max-width:768px) {
   #nav {
     display: none;
   }

@@ -1,9 +1,18 @@
 import Image from "next/image";
-
 import Link from "next/link";
 import Head from "next/head";
+import { Inter } from "next/font/google";
+import { useState } from "react";
+
+const inter = Inter({ subsets: ["latin"] });
+
+import styles from '@/styles/Home.module.css';
+
+import Header from "@/components/ux/Header";
+import MobileMenu from "@/components/ux/mobileMenu";
 
 export default function About() {
+  const [isMobileMenu, setIsMobileMenu] = useState(false);
   return (
     <>
       <Head>
@@ -65,7 +74,15 @@ export default function About() {
         />
         <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
       </Head>
-      <div className="flex flex-col gap-5 p-2 md:p-40">
+      <main className={`${styles.main} ${inter.className}`}>
+        <Header
+          styles={styles}
+          isMobileMenu={isMobileMenu}
+          setIsMobileMenu={setIsMobileMenu}
+        />
+        {isMobileMenu && <MobileMenu Link={Link} />}
+      </main>
+      <div className="flex flex-col gap-5 p-8 md:p-40 mt-[5rem] md:mt-10">
         <h1 className="text-2xl font-medium text-white leading-[3.25rem] md:text-2xl md:font-bold">
           Hi There 👋
         </h1>
@@ -103,17 +120,19 @@ export default function About() {
           </h2>
           <div className="flex flex-col grid-rows-none gap-8 mt-5 md:flex md:grid-rows-2 md:gap-8 md:flex-row">
             <div className="w-full bg-transparent">
-              <div className="rounded-lg w-full h-[500px] object-cover overflow-hidden">
+              <div className="rounded-lg w-full h-auto object-cover overflow-hidden">
                 <Image
                   src="/pfp/timi_pfp.jpg"
                   width={500}
                   height={500}
-                  className="rounded-2xl w-full h-[500px] object-cover overflow-hidden grayscale"
+                  className="rounded-2xl w-full h-auto object-cover overflow-hidden grayscale"
+                  placeholder="blur"
+                  blurDataURL="/vercel.svg"
                   alt="Picture of the author"
                 />
               </div>
               <div className="p-8 flex flex-col items-center gap-2">
-                <h4 className="text-2xl text-white">
+                <h4 className="text-lg text-white md:text-2xl">
                   <Link
                     href="/timi"
                     className="bg-darktempgrey border border-darktempgreybc p-1 px-2 rounded-md flex items-center gap-1"
@@ -132,7 +151,7 @@ export default function About() {
                     Timi
                   </Link>
                 </h4>
-                <p className="text-center text-white">
+                <p className="text-center text-white mt-4 text-sm md:text-base lg:text-base">
                   Timi, CEO and Founder of Resubase, is a tech enthusiast with a
                   strong passion for innovation and skill enhancement. He
                   entered the tech world at age X and has continued to evolve
@@ -141,17 +160,19 @@ export default function About() {
               </div>
             </div>
             <div className="w-full bg-transparent">
-              <div className="rounded-lg w-full h-[500px] object-cover overflow-hidden">
+              <div className="rounded-lg w-full h-auto object-cover overflow-hidden">
                 <Image
                   src="/pfp/kin_pfp.png"
                   width={500}
                   height={500}
-                  className="rounded-2xl w-full h-[500px] object-cover overflow-hidden"
+                  className="rounded-2xl w-full h-auto object-cover overflow-hidden"
+                  placeholder="blur"
+                  blurDataURL="/vercel.svg"
                   alt="Picture of the author"
                 />
               </div>
               <div className="p-8 flex flex-col items-center gap-2">
-                <h4 className="text-2xl text-white">
+                <h4 className="text-lg text-white md:text-2xl">
                   <Link
                     href="/kin"
                     className="bg-darktempgrey border border-darktempgreybc p-1 px-2 rounded-md flex items-center gap-1"
@@ -170,7 +191,7 @@ export default function About() {
                     Kin Leon
                   </Link>
                 </h4>
-                <p className="text-center text-white">
+                <p className="text-center text-white mt-4 text-sm md:text-base lg:text-base">
                   Kin, Resubase&apos;s CTO and Co-Founder, is passionate about
                   developing web applications. Continuously dedicated to
                   enhancing Resubase, Kin&apos;s tech journey began at age X,
@@ -183,7 +204,7 @@ export default function About() {
         <div className="w-full border-t border-grey/20">
           <div className="mt-10 flex flex-col items-center justify-center gap-8">
             <div>
-              <h3 className="text-white text-4xl font-medium">
+              <h3 className="text-white text-2xl text-center font-medium md:text-4xl lg:text-4xl">
                 Got any question?
               </h3>
             </div>

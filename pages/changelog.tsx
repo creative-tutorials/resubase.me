@@ -82,7 +82,7 @@ export default function Changelog() {
         />
         {isMobileMenu && <MobileMenu Link={Link} />}
       </main>
-      <div className="p-2 mt-10 md:p-20">
+      <div className="p-2 mt-[5rem] md:mt-10 md:p-20">
         <div>
           <h1 className="text-white text-3xl font-medium">Changelog</h1>
         </div>

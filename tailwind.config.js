@@ -18,7 +18,7 @@ module.exports = {
     colors: {
       transparent: "transparent",
       current: "currentColor",
-      white: "#ffffff",
+      white: "#f7fafc",
       light: "#ecedfb",
       purple: "#7148FC",
       midpurple: "#6E56CF",
@@ -39,7 +39,7 @@ module.exports = {
       "royalblue-dark-momentum": "#426AC6",
       hover_royal: "#2E52A5",
       purpleisfriendly: "#8860EF",
-      headerbg: "#171719",
+      headerbg: "#121215",
       learn: "#8EC9FF",
       collab: "#B2FFC3",
       build: "#A78CFF",

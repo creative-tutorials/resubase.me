@@ -1,6 +1,6 @@
 export default function Footer({ Link }: any) {
   return (
-    <footer className="p-[10px] md:p-[25px] lg:p-[30px] bg-footerbg">
+    <footer className="p-[10px] border-t border-midgrey/20 md:p-[25px] lg:p-[30px] bg-headerbg">
       <div className="md:flex md:items-center md:justify-between lg:flex lg:items-center lg:justify-between">
         <span className="text-white">
           &copy; 2023 ResubaseLabs - All rights reserved.

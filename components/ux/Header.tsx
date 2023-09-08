@@ -29,7 +29,7 @@ export default function Header({
           <Link href="/">
             <Image
               src={"/hub/resubase header logo.svg"}
-              className="w-[auto] h-[40px] object-cover"
+              className="w-[auto] h-[50px] object-cover"
               width={40}
               height={40}
               placeholder={"blur"}
@@ -91,7 +91,7 @@ export default function Header({
         <Link
           href="https://resubase.vercel.app"
           className={
-            "flex items-center bg-darkerpurple border border-midpurple text-white p-3 pl-5 pr-5 rounded-full transition-all hover:bg-frakingpurple hover:border-checkpruple"
+            "flex items-center bg-gradient-to-r from-royalblue-dark-momentum/60 to-hover_royal/60 text-white p-3 pl-5 pr-5 rounded-full transition-all hover:from-royalblue-dark-momentum hover:to-hover_royal"
           }
           id={styles.contact}
         >

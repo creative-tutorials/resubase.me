@@ -124,7 +124,7 @@ export default function Home() {
                 </Link>
                 <Link
                   href="https://resubase.vercel.app/"
-                  className="flex items-center bg-darkerpurple border border-midpurple text-white p-3 pl-5 pr-5 rounded-full transition-all hover:bg-frakingpurple hover:border-checkpruple"
+                  className="flex items-center bg-gradient-to-r from-royalblue-dark-momentum/60 to-hover_royal/60 text-white p-3 pl-5 pr-5 rounded-full transition-all hover:from-royalblue-dark-momentum hover:to-hover_royal"
                 >
                   Get Started{" "}
                   <svg
@@ -337,7 +337,7 @@ export default function Home() {
             Why Resubase?
           </h2>
           <div className="flex flex-col items-center flex-nowrap gap-5 mt-10 md:flex-row md:item-stretch md:flex-wrap md:gap-2 lg:items-stretch lg:flex-wrap lg:gap-2">
-            <div className="p-4 w-full bg-darkerpurple border border-midpurple rounded-md flex flex-col gap-3 md:p-4 md:w-auto">
+            <div className="p-4 w-full bg-pleasesleep/40 border border-midpurple/10 rounded-md flex flex-col gap-3 md:p-4 md:w-auto">
               <div>
                 <svg
                   width="50"
@@ -365,7 +365,7 @@ export default function Home() {
                 </span>
               </div>
             </div>
-            <div className="p-4 w-full bg-darkerpurple border border-midpurple rounded-md flex flex-col gap-3 md:p-4 md:w-auto">
+            <div className="p-4 w-full bg-pleasesleep/40 border border-midpurple/10 rounded-md flex flex-col gap-3 md:p-4 md:w-auto">
               <div>
                 <svg
                   width="50"
@@ -393,7 +393,7 @@ export default function Home() {
                 </span>
               </div>
             </div>
-            <div className="p-4 w-full bg-darkerpurple border border-midpurple rounded-md flex flex-col gap-3 md:p-4 md:w-auto">
+            <div className="p-4 w-full bg-pleasesleep/40 border border-midpurple/10 rounded-md flex flex-col gap-3 md:p-4 md:w-auto">
               <div>
                 <svg
                   width="50"
@@ -418,7 +418,7 @@ export default function Home() {
                 </span>
               </div>
             </div>
-            <div className="p-4 w-full bg-darkerpurple border border-midpurple rounded-md flex flex-col gap-3 md:p-4 md:w-auto">
+            <div className="p-4 w-full bg-pleasesleep/40 border border-midpurple/10 rounded-md flex flex-col gap-3 md:p-4 md:w-auto">
               <div>
                 <svg
                   width="50"
@@ -440,7 +440,7 @@ export default function Home() {
                 </span>
               </div>
             </div>
-            <div className="p-4 w-full bg-darkerpurple border border-midpurple rounded-md flex flex-col gap-3 md:p-4 md:w-auto">
+            <div className="p-4 w-full bg-pleasesleep/40 border border-midpurple/10 rounded-md flex flex-col gap-3 md:p-4 md:w-auto">
               <div>
                 <svg
                   width="50"

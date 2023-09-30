@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --main-bg: #121215;
+  --main-bg: #010203;
   --header-bg: rgb(14, 14, 15);
   --foter-bg: #141417;
   --bab: #58469c;

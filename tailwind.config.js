@@ -39,7 +39,7 @@ module.exports = {
       "royalblue-dark-momentum": "#426AC6",
       hover_royal: "#2E52A5",
       purpleisfriendly: "#8860EF",
-      headerbg: "#121215",
+      headerbg: "#010203",
       learn: "#8EC9FF",
       collab: "#B2FFC3",
       build: "#A78CFF",

@@ -1,6 +1,6 @@
 {
   "name": "resubase.me",
-  "version": "7.17.6",
+  "version": "8.17.6",
   "private": true,
   "scripts": {
     "dev": "next dev",

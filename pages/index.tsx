@@ -18,11 +18,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Resubase - The elevated learning for developers</title>
+        <title>Resubase - A high quality developer&apos;s guides & instructions to build web faster</title>
         <meta
           name="description"
-          content="Resubase is an open-source platform that fuels your journey
-          towards coding greatness!."
+          content="High quality guides and instructions to help build a faster and better application"
         />
         <meta
           name="keywords"
@@ -37,11 +36,11 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Resubase - The elevated learning for developers!"
+          content="Resubase - A high quality developer's guides & instructions to build web faster!"
         />
         <meta
           property="og:description"
-          content="Resubase is an open-source platform that fuels your journey towards coding greatness!."
+          content="High quality guides and instructions to help build a faster and better application"
         />
         <meta
           property="og:image"
@@ -53,11 +52,11 @@ export default function Home() {
         <meta property="twitter:url" content="https://resubase-me.vercel.app" />
         <meta
           name="twitter:title"
-          content="Resubase - The elevated learning for developers!"
+          content="Resubase - A high quality developer's guides & instructions to build web faster!"
         />
         <meta
           name="twitter:description"
-          content="Resubase is an open-source platform that fuels your journey towards coding greatness!."
+          content="High quality guides and instructions to help build a faster and better application"
         />
         <meta
           name="twitter:image"
@@ -91,7 +90,7 @@ export default function Home() {
               The developer handbook
             </h1>
             <p className="text-[#959ca5] font-normal md:font-medium lg:font-medium text-xs md:text-lg lg:text-lg">
-              A high quality developer&apos; guides & instructions to build web
+              A high quality developer&apos;s guides & instructions to build web
               faster
             </p>
           </div>

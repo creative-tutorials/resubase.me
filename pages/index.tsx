@@ -91,8 +91,8 @@ export default function Home() {
               The developer handbook
             </h1>
             <p className="text-[#959ca5] font-normal md:font-medium lg:font-medium text-xs md:text-lg lg:text-lg">
-              A high quality platform built on top of the Nextjs framework <br /> to
-              help developers find the right learning path.
+              A high quality developer&apos; guides & instructions to build web
+              faster
             </p>
           </div>
           <div className="z-10">

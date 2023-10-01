@@ -18,7 +18,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Resubase - A high quality developer&apos;s guides & instructions to build web faster</title>
+        <title>
+          Resubase - A high quality developer&apos;s guides & instructions to
+          build web faster
+        </title>
         <meta
           name="description"
           content="High quality guides and instructions to help build a faster and better application"
@@ -44,7 +47,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/derbreilm/image/upload/v1693402291/NEW_Landing_Page_e43uvj.png"
+          content="https://res.cloudinary.com/derbreilm/image/upload/v1696199724/Resubase_new_design_byho5q.png"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -60,7 +63,7 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://res.cloudinary.com/derbreilm/image/upload/v1693402291/NEW_Landing_Page_e43uvj.png"
+          content="https://res.cloudinary.com/derbreilm/image/upload/v1696199724/Resubase_new_design_byho5q.png"
         />
 
         <link
@@ -87,11 +90,11 @@ export default function Home() {
         <div className="flex flex-col gap-8 items-center p-4 justify-center w-full min-h-screen">
           <div className="flex flex-col text-center items-center gap-4 z-10">
             <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold text-[#cecfd1]">
-              The developer handbook
+              Next generation developer&apos;s guide
             </h1>
             <p className="text-[#959ca5] font-normal md:font-medium lg:font-medium text-xs md:text-lg lg:text-lg">
-              A high quality developer&apos;s guides & instructions to build web
-              faster
+              A high quality developer&apos;s guides & instructions to build
+              faster and more efficient softwares
             </p>
           </div>
           <div className="z-10">

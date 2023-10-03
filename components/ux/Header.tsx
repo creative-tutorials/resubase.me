@@ -15,7 +15,7 @@ export default function Header({
   return (
     <header
       className={
-        "fixed top-0 left-0 w-[100%] flex items-center justify-between gap-5 p-4 pl-8 pr-8 bg-headerbg z-10 md:p-6 md:pl-20 md:pr-20 "
+        "fixed top-0 left-0 w-[100%] flex items-center justify-between gap-5 p-4 px-8 bg-footerbg/80 z-10 md:p-4 md:px-20 "
       }
     >
       <div className="flex items-stretch gap-40">

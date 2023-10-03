@@ -89,17 +89,17 @@ export default function Home() {
         <Header styles={styles} />
         <div className="flex flex-col gap-8 items-center p-4 justify-center w-full min-h-screen">
           <div className="flex flex-col text-center items-center gap-4 z-10">
-            <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold text-[#cecfd1]">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold text-[#f2f6fa] font-arrone">
               Next generation developer&apos;s guide
             </h1>
-            <p className="text-[#959ca5] font-normal md:font-medium lg:font-medium text-xs md:text-lg lg:text-lg">
+            <p className="text-light/70 font-normal text-xl md:text-2xl lg:text-2xl">
               A high quality developer&apos;s guides & instructions to build
               faster and more efficient softwares
             </p>
           </div>
           <div className="z-10">
             <Link href="/start">
-              <Button className="bg-white hover:bg-white/90 text-lg p-6">
+              <Button className="bg-white hover:bg-white/90 text-lg text-astrobtnclr p-7 rounded-full flex items-center gap-2">
                 Get Started <ArrowRightIcon />{" "}
               </Button>
             </Link>

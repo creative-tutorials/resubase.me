@@ -35,11 +35,13 @@ module.exports = {
       royalblue: "#3B82F6",
       metal: "#CBD5E1",
       midnightblue: "#0F172A",
+      astrobtnbg: "#f2f6fa",
+      astrobtnclr: "#142cff",
       skynight: "#304065",
       "royalblue-dark-momentum": "#426AC6",
       hover_royal: "#2E52A5",
       purpleisfriendly: "#8860EF",
-      headerbg: "#010203",
+      headerbg: "#0d0f14",
       learn: "#8EC9FF",
       collab: "#B2FFC3",
       build: "#A78CFF",
@@ -84,6 +86,9 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      fontFamily: {
+        'arrone': ['AR One Sans', 'sans-serif']
       },
       borderRadius: {
         sm: "0.125rem",

@@ -47,7 +47,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/derbreilm/image/upload/v1696199724/Resubase_new_design_byho5q.png"
+          content="https://res.cloudinary.com/derbreilm/image/upload/v1696449924/Site_og_Image_NEW_foc0mo.png"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -63,7 +63,7 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://res.cloudinary.com/derbreilm/image/upload/v1696199724/Resubase_new_design_byho5q.png"
+          content="https://res.cloudinary.com/derbreilm/image/upload/v1696449924/Site_og_Image_NEW_foc0mo.png"
         />
 
         <link
@@ -105,7 +105,6 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        {/* <Footer Link={Link} /> */}
       </main>
     </>
   );
